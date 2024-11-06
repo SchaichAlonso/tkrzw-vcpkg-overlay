@@ -1,13 +1,13 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO SchaichAlonso/tkrzw
-    SHA512 0d87fc3d3e1d52229954a0b5588bd0cfd5bb53ad820fd829d8c72c94735fbb678e6f5947c6404ad214d8ad42cf6ed8db97ae7fd55f8ca13a8ebb5611d1e07640
-    REF 3653a70a3a8d02d39cb2e087d057e4159ad86f2a
+    SHA512 92138bf695be648bb812baf74d891b1271c116df008393c703f92831575d31d21289a87ceabfe82853108253573998926f307260c1857d214375b61937f9ccfd
+    REF b0b14b31aac26683475ac2ead5a920cb2e14aa8f
 )
 vcpkg_check_features(
     OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
-        tools           WITH_TOOLS
+        tools           TKRZW_TOOLS
 )
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
